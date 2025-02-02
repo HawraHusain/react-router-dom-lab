@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router";
 import MailboxList from "./assets/components/MailboxList/MailboxList";
 import MailboxDetails from "./assets/components/MailboxDetails/MailboxDetails";
 import MailboxForm from "./assets/components/MailboxForm/MailboxForm";
- 
+ import "./App.css"
 const initialState = [
   {
     _id: 1,
@@ -16,9 +16,9 @@ const initialState = [
 const App = (props) => {
   const [mailboxes,setMailboxes] = useState(initialState)
   
-  const addBox =(formDate) =>{
+  const addBox =(formData) =>{
     formData._id = mailboxes.length + 1
-    setMailboxes([...mailboxes,formDate])
+    setMailboxes([...mailboxes,formData])
 }
   return (
     <>

@@ -16,7 +16,7 @@ const navigate =useNavigate();
         event.preventDefault()
         props.addBox(formData);//Add the data to list
         setFormData(initialState); //Clear data
-        navigate('/Mailbox')
+        navigate('/mailboxes')
     }
     return (
         <>
